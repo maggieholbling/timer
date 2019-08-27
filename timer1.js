@@ -8,10 +8,7 @@ const alarm = function (arr, callback) {
       }, Number(arr[i]) * 1000)
     }
   }
-
- 
 }
-
 
 alarm(process.argv.slice(2), () => {
   process.stdout.write('\x07');
